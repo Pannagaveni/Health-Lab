@@ -7,9 +7,13 @@ from classification.classification import predict
 
 app = Flask(__name__)
 
-app.config["IMAGE_UPLOADS"] = "/home/chetan/CyberLabs/alzheimer/alzheimer/web_app_with_ml_backend/input_imgs"
+#app.config["IMAGE_UPLOADS"] = "/home/chetan/CyberLabs/alzheimer/alzheimer/web_app_with_ml_backend/input_imgs"
+app.config["IMAGE_UPLOADS"] = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Python 3.9\Project\Health-Lab\web_app_with_ml_backend\input_imgs"
+
 app.config["ALLOWED_IMAGE_EXTENSIONS"] = ["JPEG", "JPG", "PNG"]
-app.config["IMAGE_HEATMAP"] = "/home/chetan/CyberLabs/alzheimer/alzheimer/web_app_with_ml_backend/heat_map"
+#app.config["IMAGE_HEATMAP"] = "/home/chetan/CyberLabs/alzheimer/alzheimer/web_app_with_ml_backend/heat_map"
+app.config["IMAGE_HEATMAP"]= "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Python 3.9\Project\Health-Lab\web_app_with_ml_backend\input_imgs"
+
 
 
 def image_2_heatmap(img_path, mask_path):
